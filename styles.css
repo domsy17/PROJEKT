@@ -1,0 +1,289 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+/* Header Styles */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo-container h1 {
+    display: flex;
+    align-items: center; /* Poravnava vertikalno logo s tekstom */
+    font-size: 3rem;
+    margin: 0;
+}
+
+.old, .jack {
+    margin: 0 10px; /* Razmak između 'OLD' i loga, te između loga i 'T' */
+}
+
+.logo {
+    width: 50px; /* Prilagodite veličinu loga po želji */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: 15px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+/* Container for Text and Image */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.column_text {
+    width: 60%;
+}
+
+.column_img {
+    width: 35%;
+}
+
+.column_img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Car List Styles */
+
+.title_one {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.car-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.car-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.car-item h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.car-item p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.title_two {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.galerija {
+    display: flex;
+    flex-direction: column; /* Postavlja slike jednu ispod druge */
+    gap: 20px; /* Razmak između slika */
+    padding: 20px;
+}
+
+.galerija img {
+    width: 100%; /* Slike će zauzeti cijelu širinu roditeljskog elementa */
+    height: auto; /* Očuvanje proporcija slika */
+    object-fit: cover; /* Osigurava da slike pokrivaju cijeli prostor bez izobličenja */
+}
+
+.text_1, .text_2 {
+    color: #b69425;
+}
+
+.btn-contact {
+    display: inline-block;
+    background-color: #b69425; /* Boja gumba */
+    color: white; /* Boja teksta unutar gumba */
+    padding: 10px 20px; /* Unutarnje margine (razmak oko teksta) */
+    text-align: center; /* Poravnavanje teksta u sredinu */
+    text-decoration: none; /* Uklanja podcrtavanje linka */
+    border-radius: 5px; /* Zaokruženi kutovi gumba */
+    font-size: 16px; /* Veličina fonta */
+    transition: background-color 0.3s ease; /* Glatka promjena boje pri hoveru */
+}
+
+.btn-contact:hover {
+    background-color: #a5801b; /* Tamnija verzija boje pri hoveru */
+}
+
+/* Contact Form Styles */
+.contact {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.contact label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.contact input,
+.contact select,
+.contact textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact button {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #b69425;
+}
+
+.impressum {
+    background-color: #fff;
+    margin: 30px auto;
+    padding: 20px;
+    width: 95%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.impressum h3 {
+    font-size: 28px;
+    color: #b69425;
+    margin-bottom: 15px;
+}
+
+.impressum p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column_text, .column_img {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .car-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .galerija {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact form {
+        grid-template-columns: 1fr;
+    }
+
+    .contact label, .contact input, .contact select, .contact textarea, .contact button {
+        font-size: 0.9rem;
+    }
+}
