@@ -2,20 +2,21 @@ SALON OLD TIMER AUTOMOBILA
 
 OPIS
 
-Web stranica koja sadrži popis rijetkih old timer automobila. Sadrži izbornik rubrika:
+Web stranica koja sadrži kolekciju rijetkih old timer automobila.
+
+IZBORNIK:
 
 - O nama
-- Pregled automobila
-- Specifikacije vozila (brand, tip vozila, godište, kilometraža te vrstu goriva)
-- Kontakt
+- Pregled automobila specifikacijama vozila (brand, godište, kilometraža te vrstu goriva)
+- Galerija slika
 - Impressum
+- Kontakt forma
 
-FUNKCIJE
+FUNKCIJE:
 
 - Pregled i pretraga vozila
-- Ažuriranje podataka o vozilima
-- Brisanje vozila
-- Kontakt forma
+- Brza i pregledna navigacija po stranici
+- Kontakt forma u kojoj se odabire vozilo za najam sa podacima klijenta spojen na MongoDB
 
 KORIŠTENI ALATI:
 
@@ -23,4 +24,6 @@ KORIŠTENI ALATI:
 - CSS
 - JavaScript
 - MongoDB
+
+Cilj ovog projekta je napraviti preglednu i funkcionalnu stranicu koja će biti spojena sa Mongo DB-om i sadržavati dosada naučeno znanje koristeći HTML, CSS te JavaScript programe.
 
