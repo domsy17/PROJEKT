@@ -7,7 +7,7 @@ Web stranica koja sadrži kolekciju rijetkih old timer automobila.
 IZBORNIK:
 
 - O nama
-- Pregled automobila specifikacijama vozila (brand, godište, kilometraža te vrstu goriva)
+- Pregled automobila sa specifikacijama vozila (brand, godište, kilometraža te vrsta goriva)
 - Galerija slika
 - Impressum
 - Kontakt forma
