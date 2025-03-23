@@ -1,11 +1,10 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and Base Styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
@@ -13,8 +12,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header Styles */
-/* Header Styles */
+/* header */
 header {
     display: flex;
     flex-direction: column;
@@ -27,17 +25,17 @@ header {
 
 .logo-container h1 {
     display: flex;
-    align-items: center; /* Poravnava vertikalno logo s tekstom */
+    align-items: center;
     font-size: 3rem;
     margin: 0;
 }
 
 .old, .jack {
-    margin: 0 10px; /* Razmak između 'OLD' i loga, te između loga i 'T' */
+    margin: 0 10px;
 }
 
 .logo {
-    width: 50px; /* Prilagodite veličinu loga po želji */
+    width: 50px;
     height: auto;
 }
 
@@ -63,7 +61,7 @@ nav ul li a:hover {
     background-color: #444;
 }
 
-/* Container for Text and Image */
+/* container */
 .container {
     display: flex;
     justify-content: space-between;
@@ -83,8 +81,7 @@ nav ul li a:hover {
     height: auto;
 }
 
-/* Car List Styles */
-
+/* car list*/
 .title_one {
     text-align: center;
     margin-top: 60px;
@@ -128,15 +125,15 @@ nav ul li a:hover {
 
 .galerija {
     display: flex;
-    flex-direction: column; /* Postavlja slike jednu ispod druge */
-    gap: 20px; /* Razmak između slika */
+    flex-direction: column;
+    gap: 20px;
     padding: 20px;
 }
 
 .galerija img {
-    width: 100%; /* Slike će zauzeti cijelu širinu roditeljskog elementa */
-    height: auto; /* Očuvanje proporcija slika */
-    object-fit: cover; /* Osigurava da slike pokrivaju cijeli prostor bez izobličenja */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .text_1, .text_2 {
@@ -145,21 +142,21 @@ nav ul li a:hover {
 
 .btn-contact {
     display: inline-block;
-    background-color: #b69425; /* Boja gumba */
-    color: white; /* Boja teksta unutar gumba */
-    padding: 10px 20px; /* Unutarnje margine (razmak oko teksta) */
-    text-align: center; /* Poravnavanje teksta u sredinu */
-    text-decoration: none; /* Uklanja podcrtavanje linka */
-    border-radius: 5px; /* Zaokruženi kutovi gumba */
-    font-size: 16px; /* Veličina fonta */
-    transition: background-color 0.3s ease; /* Glatka promjena boje pri hoveru */
+    background-color: #b69425;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .btn-contact:hover {
-    background-color: #a5801b; /* Tamnija verzija boje pri hoveru */
+    background-color: #a5801b;
 }
 
-/* Contact Form Styles */
+/*contact*/
 .contact {
     background-color: #fff;
     padding: 30px;
@@ -183,9 +180,7 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-.contact input,
-.contact select,
-.contact textarea {
+.contact input, .contact select, .contact textarea {
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ddd;
@@ -228,7 +223,7 @@ nav ul li a:hover {
     margin: 10px 0;
 }
 
-/* Footer Styling */
+/* footer */
 footer {
     background-color: #333;
     color: #fff;
@@ -237,13 +232,14 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    font-style: italic;
 }
 
 footer p {
     font-size: 1rem;
 }
 
-/* Media Queries for Responsiveness */
+/* media responsiveness */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
